@@ -1,0 +1,178 @@
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+/* ------------------ General Style -------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  /* padding-top: 56px; */
+}
+.btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #F1C40F;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  outline: none;
+  border: none;
+}
+.btn:hover{
+  background-color: #FF8C00;
+}
+
+/* ------------------ Header Style -------------- */
+#header {
+  display: flex;
+  background-color: #eee;
+  position: fixed;
+  padding: 1rem;
+}
+#header-img {
+  width: 25%;
+  cursor: pointer;
+}
+#nav-bar {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------ main Style -------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+#page-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* ------------------ form Style -------------- */
+#form {
+  margin: 2rem 0;
+}
+#email {
+  width: 25rem;
+  padding: .5rem;
+  padding-left: .725rem;
+  border-radius: none;
+  border: none;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+/* ------------------ features Style -------------- */
+#features {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+.feature {
+  display: flex;
+  gap: 4rem;
+  width: 55rem;
+}
+.feature-img {
+  width: 3rem;
+}
+
+/* ------------------ video Style -------------- */
+section#how-works {
+  margin: 3rem 0;
+}
+
+/* ------------------ card Style -------------- */
+#pricing {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+.card {
+  text-align: center;
+  border: 1px solid;
+  border-radius: 3px;
+  width: 18rem;
+}
+.card-title {
+  background-color: gainsboro;
+  font-weight: bold;
+  padding: .725rem;
+}
+.price {
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  font-size: 1.625rem;
+}
+.description {
+  margin: 1.5rem 0;
+  padding: 0 1.125rem;
+}
+.select {
+  margin: .5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ------------------ footer Style -------------- */
+footer {
+  padding: 1.5rem 1rem;
+  background-color: gainsboro;
+  margin-top: 3rem;
+  text-align: right;
+}
+.footer-links {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: black;
+}
+#copyright {
+  margin-top: .4rem;
+  font-size: .825rem;
+}
+
+/* ------------------ media queries -------------- */
+@media (max-width: 900px) {
+  .feature {
+    width: 35rem;
+  }
+  #pricing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #page-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #email {
+    width: 15rem;
+  }
+  .feature {
+    width: 25rem;
+  }
+  section#how-works {
+    width: 85% !important;
+  }
+
+}
